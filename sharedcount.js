@@ -1,13 +1,21 @@
 module.exports = function (req, res, next) {
   var userName = req.body.user_name;
+  /*
   var sent_text = req.body.text;
   var url_to_check = sent_text.substring(13);
   var sc_apikey = '9ccb85fa8f546a5d7b10b474207a63386a2987ce';
   var sharedcount_url = 'https://free.sharedcount.com/?apikey='+sc_apikey+'&url='+url_to_check;
- 
+ */
  var botPayload = {
-  text : 'Hey there '+userName+'!';
+  text : 'Hey there '+userName+'!'
  };
+
+ // avoid infinite loop
+  if (userName !== 'slackbot') {
+    return res.status(200).json(botPayload);
+  } else {
+    return res.status(200).end();
+  }
 
  /*
  var request = require('request'); 
