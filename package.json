@@ -1,0 +1,27 @@
+{
+  "name": "sharedcount01",
+  "version": "1.0.0",
+  "description": "Slack integration for SharedCount API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.x.x",
+    "body-parser": "^1.x.x",
+    "request": "^2.64.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jharrington-ls/sharedcount01.git"
+  },
+  "keywords": [
+    "slack"
+  ],
+  "author": "John Harrington",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jharrington-ls/sharedcount01/issues"
+  },
+  "homepage": "https://github.com/jharrington-ls/sharedcount01#readme"
+}
