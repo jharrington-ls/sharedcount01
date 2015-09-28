@@ -5,6 +5,11 @@ module.exports = function (req, res, next) {
   var sc_apikey = '9ccb85fa8f546a5d7b10b474207a63386a2987ce';
   var sharedcount_url = 'https://free.sharedcount.com/?apikey='+sc_apikey+'&url='+url_to_check;
  
+ var botPayload = {
+  text : 'Hey there '+userName+'!';
+ };
+
+ /*
  var request = require('request'); 
 
 
@@ -36,5 +41,5 @@ request(sharedcount_url, function (error, response, body) {
     }
   }
 })
-
+*/
 }
